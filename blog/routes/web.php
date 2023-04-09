@@ -17,6 +17,8 @@ use App\Http\Controllers\CursoController;
 
 Route::get('/', HomeController::class);
 /**grupos de Rutas */
+
+
 Route::controller(CursoController::class)->group(function(){
     /**Metodos */
     Route::get('cursos',  'index');
